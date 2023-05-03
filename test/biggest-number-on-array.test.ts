@@ -14,4 +14,9 @@ describe('Test biggestNumber function', () => {
         expect(biggestNumber([-1, 0])).toBe(0)
     })
 
+    it('should return Empty params when biggestNumber([]) is call', () => {
+        const arrayNumbers: Array<number> = []
+        expect(biggestNumber(arrayNumbers)).toBe('Error: Array of number is empty')
+    })
+
 })
